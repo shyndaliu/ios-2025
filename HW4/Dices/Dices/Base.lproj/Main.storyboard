@@ -11,65 +11,74 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="Dices" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dices" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundPink" translatesAutoresizingMaskIntoConstraints="NO" id="CXM-vF-L6u">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="BnU-WP-RqK" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRc-qj-Us1" userLabel="Get Affirmation Button">
-                                <rect key="frame" x="95" y="558" width="203" height="46"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xN6-Ge-Y0s">
+                                <rect key="frame" x="76" y="104" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice4" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-i8-mvA">
+                                <rect key="frame" x="34" y="362" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="pno-ck-DfW">
+                                <rect key="frame" x="221" y="362" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6To-o0-Aa7">
+                                <rect key="frame" x="108" y="608" width="176" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="get my daily affirmation"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Roll!">
+                                    <backgroundConfiguration key="background" cornerRadius="18">
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="getAffirmationButtonIsTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0E-AL-trc"/>
+                                    <action selector="onRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qGH-uC-tfJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDu-aP-uvs">
-                                <rect key="frame" x="47" y="307" width="299" height="203"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <color key="NSColor" systemColor="systemBackgroundColor"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CXM-vF-L6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5fX-WA-HgM"/>
-                            <constraint firstItem="CXM-vF-L6u" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="firstBaseline" id="KSR-MD-esD"/>
-                            <constraint firstItem="CXM-vF-L6u" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Q42-NB-9Z7"/>
-                            <constraint firstAttribute="bottom" secondItem="CXM-vF-L6u" secondAttribute="bottom" id="u3p-f6-pPl"/>
+                            <constraint firstItem="BnU-WP-RqK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FCi-w7-lYe"/>
+                            <constraint firstAttribute="bottom" secondItem="BnU-WP-RqK" secondAttribute="bottom" id="V4y-hp-mOA"/>
+                            <constraint firstItem="BnU-WP-RqK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cLJ-iY-wtu"/>
+                            <constraint firstItem="BnU-WP-RqK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fww-b7-6xj"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="affirmation" destination="ZDu-aP-uvs" id="RMe-K8-lXe"/>
-                        <outlet property="getAffirmationButton" destination="aRc-qj-Us1" id="mM0-Az-nbb"/>
+                        <outlet property="firstDice" destination="Xsq-i8-mvA" id="bWK-gB-0mx"/>
+                        <outlet property="rollButton" destination="6To-o0-Aa7" id="YJK-p4-AI8"/>
+                        <outlet property="secondDice" destination="pno-ck-DfW" id="SyL-RP-1AK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="46.564885496183201" y="3.5211267605633805"/>
         </scene>
     </scenes>
-    <color key="tintColor" systemColor="tableBackgroundColor"/>
     <resources>
-        <image name="BackgroundPink" width="736" height="1308"/>
+        <image name="dice1" width="100" height="100"/>
+        <image name="dice4" width="100" height="100"/>
+        <image name="diceeLogo" width="196" height="128"/>
+        <image name="newbackground" width="444" height="414"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="tableBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

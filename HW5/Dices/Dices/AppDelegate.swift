@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Dices
 //
-//  Created by Uldana Shyndali on 17.10.2025.
+//  Created by Uldana Shyndali on 15.10.2025.
 //
 
 import UIKit
