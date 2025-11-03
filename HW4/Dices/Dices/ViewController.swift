@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var firstDice: UIImageView!
     
+    @IBOutlet weak var thirdDice: UIImageView!
     @IBOutlet weak var secondDice: UIImageView!
     
     let diceImages: [UIImage] = [#imageLiteral(resourceName: "dice1"), #imageLiteral(resourceName: "dice2"), #imageLiteral(resourceName: "dice3"), #imageLiteral(resourceName: "dice4"), #imageLiteral(resourceName: "dice5"), #imageLiteral(resourceName: "dice6")]
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     @IBAction func onRoll(_ sender: UIButton){
         firstDice.image = diceImages.randomElement()
         secondDice.image = diceImages.randomElement()
+        thirdDice.image = diceImages.randomElement()
     }
     
 }

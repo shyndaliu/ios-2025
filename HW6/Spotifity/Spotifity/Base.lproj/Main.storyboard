@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Spotifity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example of one possibly very long track who knows" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9d-Xm-BVy">
+                                <rect key="frame" x="24" y="613" width="345" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-l5-jgQ">
+                                <rect key="frame" x="131.66666666666669" y="658.66666666666663" width="129.66666666666669" height="23.333333333333371"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Example Artist">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="20" name="SFMono-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="px3-lG-P6D">
+                                <rect key="frame" x="66.666666666666686" y="702" width="260" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQb-Hf-Y9X" userLabel="prevButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="BYd-YZ-mat"/>
+                                            <constraint firstAttribute="height" constant="80" id="uS5-Ba-2dR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="49"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="⏪">
+                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedPrevButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ijf-Lj-gXk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEw-hi-gcC" userLabel="controlButton">
+                                        <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Gu2-Hp-NIA"/>
+                                            <constraint firstAttribute="width" constant="80" id="LtR-ff-VPl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="49"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="▶️">
+                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedControlButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JS3-HY-y8j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHs-NK-ZrS" userLabel="nextButton">
+                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="4nR-tx-3hz"/>
+                                            <constraint firstAttribute="height" constant="80" id="hWw-IY-9dJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="49"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="⏩️"/>
+                                        <connections>
+                                            <action selector="tappedNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1Q-xb-gqc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qek-i4-NQM" userLabel="vinylView">
+                                <rect key="frame" x="20" y="89" width="353" height="353"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-vinyl-record-with-red-label-illustration-png" translatesAutoresizingMaskIntoConstraints="NO" id="a8T-qh-KaL" userLabel="vinyl">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="track1" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-Lr-pVT" userLabel="albumCover">
+                                        <rect key="frame" x="90" y="90" width="173" height="173"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ha5-Lr-pVT" secondAttribute="height" multiplier="1:1" id="Tyx-KS-cI0"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="a8T-qh-KaL" firstAttribute="leading" secondItem="Qek-i4-NQM" secondAttribute="leading" id="42F-QW-WLg"/>
+                                    <constraint firstItem="ha5-Lr-pVT" firstAttribute="leading" secondItem="Qek-i4-NQM" secondAttribute="leading" constant="90" id="5Ez-bD-20j"/>
+                                    <constraint firstAttribute="trailing" secondItem="a8T-qh-KaL" secondAttribute="trailing" id="9Y7-gn-666"/>
+                                    <constraint firstAttribute="bottom" secondItem="a8T-qh-KaL" secondAttribute="bottom" id="DGd-Ie-Sdn"/>
+                                    <constraint firstItem="ha5-Lr-pVT" firstAttribute="centerY" secondItem="Qek-i4-NQM" secondAttribute="centerY" id="Hh9-GG-joh"/>
+                                    <constraint firstAttribute="trailing" secondItem="ha5-Lr-pVT" secondAttribute="trailing" constant="90" id="Odb-Tv-mlO"/>
+                                    <constraint firstItem="a8T-qh-KaL" firstAttribute="top" secondItem="Qek-i4-NQM" secondAttribute="top" id="Qcx-a3-sL8"/>
+                                    <constraint firstItem="ha5-Lr-pVT" firstAttribute="centerX" secondItem="Qek-i4-NQM" secondAttribute="centerX" id="bMK-Tc-cdM"/>
+                                    <constraint firstAttribute="width" secondItem="Qek-i4-NQM" secondAttribute="height" multiplier="1:1" id="hOP-Sv-I6V"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hUa-l5-jgQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Qv-fH-nv2"/>
+                            <constraint firstItem="px3-lG-P6D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1bV-Vh-vmP"/>
+                            <constraint firstItem="hUa-l5-jgQ" firstAttribute="top" secondItem="i9d-Xm-BVy" secondAttribute="bottom" constant="5" id="2lW-mJ-HFQ"/>
+                            <constraint firstItem="Qek-i4-NQM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="HMS-Tg-5G7"/>
+                            <constraint firstItem="i9d-Xm-BVy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JUJ-dy-vHF"/>
+                            <constraint firstItem="px3-lG-P6D" firstAttribute="top" secondItem="hUa-l5-jgQ" secondAttribute="bottom" constant="20" id="MyD-km-9dN"/>
+                            <constraint firstItem="i9d-Xm-BVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ShB-Ea-iIU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qek-i4-NQM" secondAttribute="trailing" constant="20" id="UEl-gO-RCn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i9d-Xm-BVy" secondAttribute="trailing" constant="24" id="UFB-Mn-6kn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="px3-lG-P6D" secondAttribute="bottom" constant="36" id="e4O-gm-xtt"/>
+                            <constraint firstItem="Qek-i4-NQM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gVk-4X-gtG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumCover" destination="ha5-Lr-pVT" id="pVC-UA-iF4"/>
+                        <outlet property="artistName" destination="hUa-l5-jgQ" id="B4e-yx-Tec"/>
+                        <outlet property="trackName" destination="i9d-Xm-BVy" id="AXg-oH-tNS"/>
+                        <outlet property="vinylView" destination="Qek-i4-NQM" id="zTm-3o-ilq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="black-vinyl-record-with-red-label-illustration-png" width="350" height="350"/>
+        <image name="track1" width="300" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
