@@ -37,7 +37,36 @@ TableItem(title: "History of Kazakhstan",
           subtitle: "by Arman Jumadil",
           review: "A comprehensive study of Kazakhstan's history from ancient times to the modern era.",
           image: #imageLiteral(resourceName: "course5"),
-          category: .course)
+          category: .course),
+TableItem(title: "iOS Development",
+              subtitle: "by Arman Myrzakanurov",
+              review: "Learn to build native iOS apps, covering Swift, UIKit, and best practices for mobile development.",
+              image: #imageLiteral(resourceName: "course6"),
+              category: .course),
+    
+    TableItem(title: "IT Infrastructure and Computer Networks",
+              subtitle: "by Temirlan Zhaksylykov",
+              review: "Fundamentals of networking, infrastructure management, and IT systems administration.",
+              image: #imageLiteral(resourceName: "course7"),
+              category: .course),
+    
+    TableItem(title: "Calculus",
+              subtitle: "by Aliya Tursynzhanova",
+              review: "A detailed course on differential and integral calculus with practical problem-solving techniques.",
+              image: #imageLiteral(resourceName: "course8"),
+              category: .course),
+    
+    TableItem(title: "Advanced Statistics",
+              subtitle: "by Damir Eleusizov",
+              review: "Explore statistical modeling, inference, and data analysis techniques for complex datasets.",
+              image: #imageLiteral(resourceName: "course9"),
+              category: .course),
+    
+    TableItem(title: "ICPC Preparation",
+              subtitle: "by Alimzhan Amanov",
+              review: "Competitive programming course preparing students for ICPC contests, algorithms, and problem-solving strategies.",
+              image: #imageLiteral(resourceName: "course10"),
+              category: .course)
 ]
 
 

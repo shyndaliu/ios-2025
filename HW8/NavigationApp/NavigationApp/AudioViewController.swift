@@ -36,8 +36,39 @@ let audios: [TableItem] = [
               subtitle: "by SWV",
               review: "Classic R&B album full of smooth tracks and harmony",
               image: #imageLiteral(resourceName: "track5"),
-              category: .audio)
-]
+              category: .audio),
+        TableItem(title: "THIS IS FOR",
+                  subtitle: "by TWICE",
+                  review: "A powerful album by TWICE blending energetic pop, confidence, and bold musical experimentation",
+                  image: #imageLiteral(resourceName: "track6"),
+                  category: .audio),
+        
+        TableItem(title: "B’Day (Deluxe Edition)",
+                  subtitle: "by Beyoncé",
+                  review: "An iconic deluxe album filled with strong vocals, empowerment, and unforgettable R&B-pop hits",
+                  image: #imageLiteral(resourceName: "track7"),
+                  category: .audio),
+        
+        TableItem(title: "БОГ РЭПА",
+                  subtitle: "by FACE",
+                  review: "A raw and expressive rap album capturing FACE’s signature rebellious style",
+                  image: #imageLiteral(resourceName: "track8"),
+                  category: .audio),
+        
+        TableItem(title: "Camp",
+                  subtitle: "by Childish Gambino",
+                  review: "A creative blend of hip-hop and storytelling where Gambino delivers sharp lyrics and emotional depth",
+                  image: #imageLiteral(resourceName: "track9"),
+                  category: .audio),
+        
+        TableItem(title: "DTMF",
+                  subtitle: "by Bad Bunny",
+                  review: "A dynamic and rhythmic project featuring Bad Bunny’s signature reggaeton and trap energy",
+                  image: #imageLiteral(resourceName: "track10"),
+                  category: .audio)
+    ]
+
+
 
 class AudioViewController: ViewController {
 

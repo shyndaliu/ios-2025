@@ -36,8 +36,37 @@ let books: [TableItem] = [
               subtitle: "by Kurt Vonnegut",
               review: "A satirical, science-fiction infused anti-war novel about the bombing of Dresden.",
               image: #imageLiteral(resourceName: "book5"),
-              category: .book)
-]
+              category: .book),
+    TableItem(title: "The Godfather",
+                  subtitle: "by Mario Puzo",
+                  review: "A gripping saga of power, loyalty, and betrayal within the legendary Corleone crime family.",
+                  image: #imageLiteral(resourceName: "book6"),
+                  category: .book),
+        
+        TableItem(title: "The Count of Monte Cristo",
+                  subtitle: "by Alexandre Dumas",
+                  review: "An epic tale of betrayal, resilience, and masterful revenge spanning decades.",
+                  image: #imageLiteral(resourceName: "book7"),
+                  category: .book),
+        
+        TableItem(title: "И дольше века длится день",
+                  subtitle: "by Чингиз Айтматов",
+                  review: "A powerful novel blending realism and folklore while exploring history, identity, and the human spirit.",
+                  image: #imageLiteral(resourceName: "book8"),
+                  category: .book),
+        
+        TableItem(title: "War and Peace",
+                  subtitle: "by Leo Tolstoy",
+                  review: "A monumental epic intertwining personal stories with sweeping historical events of the Napoleonic era.",
+                  image: #imageLiteral(resourceName: "book9"),
+                  category: .book),
+        
+        TableItem(title: "The Myth of Sisyphus",
+                  subtitle: "by Albert Camus",
+                  review: "A philosophical essay examining the absurd condition of human existence and the search for meaning.",
+                  image: #imageLiteral(resourceName: "book10"),
+                  category: .book)
+    ]
 
 
 class BookViewController: ViewController {

@@ -36,8 +36,37 @@ let movies: [TableItem] = [
               subtitle: "by Satoshi Kon",
               review: "Full-length anime movie, which was an inspiration for the 'Black Swan'. Absolute must watch.",
               image: #imageLiteral(resourceName: "movie5"),
-              category: .movie)
-]
+              category: .movie),
+    TableItem(title: "Interstellar",
+                  subtitle: "by Christopher Nolan",
+                  review: "A visually stunning sci-fi epic exploring space, time, and human perseverance.",
+                  image: #imageLiteral(resourceName: "movie6"),
+                  category: .movie),
+        
+        TableItem(title: "Barbie",
+                  subtitle: "by Greta Gerwig",
+                  review: "A colorful, fun, and satirical take on the iconic doll’s world, full of humor and life lessons.",
+                  image: #imageLiteral(resourceName: "movie7"),
+                  category: .movie),
+        
+        TableItem(title: "Harakiri (1966)",
+                  subtitle: "by Masaki Kobayashi",
+                  review: "A powerful samurai drama examining honor, revenge, and societal hypocrisy.",
+                  image: #imageLiteral(resourceName: "movie8"),
+                  category: .movie),
+        
+        TableItem(title: "The Good, the Bad and the Ugly",
+                  subtitle: "by Sergio Leone",
+                  review: "Legendary spaghetti western with unforgettable characters and iconic music by Ennio Morricone.",
+                  image: #imageLiteral(resourceName: "movie9"),
+                  category: .movie),
+        
+        TableItem(title: "Superman (2025)",
+                  subtitle: "by James Gunn",
+                  review: "Superhero adventure promising action-packed sequences and modern take on the classic hero.",
+                  image: #imageLiteral(resourceName: "movie10"),
+                  category: .movie)
+    ]
 
 class MovieViewController: ViewController {
 
